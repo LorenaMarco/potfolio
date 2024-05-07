@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Digital Menenia | Web Developer</title>
+</head>
+
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                  <div class="contenedor-logo">
+                  <!--  <img src="assets/img/logo-digital.png" alt="logo-digital" >  -->
+                </div>
+    
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#conocimientos" onclick="seleccionar(this)">CONOCIMIENTOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/lorena-marco/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2> <span>Digital Menenia</span> Web Developer</h2>
+                <p class="descripcion">"Los sueños no funcionan a menos que tú lo hagas. Trabaja duro, mantén la fe y haz que suceda."</p>
+                <p class="descripcion">- Thomas Edison -</p>
+
+                <a href="#portfolio">Ir a Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+      <!-- <div class="contenedor-foto">
+        <img src="assets/img/1280px.jpg" alt="">   
+        </div>
+      </div> -->
+
+      
+      <div class="sobremi">
+          <p class="titulo-seccion">Sobre Mi</p>
+          <h2>Hola, soy <span>Lorena Marco</span> </h2>
+          <h3>Desarrolladora Web</h3>
+          <p>Hace 6 años, decidí dar un giro inesperado que transformó por completo mi trayectoria. Fue entonces cuando la programación se cruzó en mi camino, descubriendo el fascinante mundo que todo ello conlleva, un lenguaje universal capaz de construir soluciones y dar vida a ideas.</p>
+          <p>Desde el momento en que empecé a sumergirme en el universo de la programación, me di cuenta de que había encontrado mi pasión. Cada línea de código se convirtió en un desafío emocionante, una oportunidad para resolver problemas complejos y brindar soluciones innovadoras.</p>
+          <p>Con el tiempo, me di cuenta de que la programación no solo era un medio para dar solución a los retos que encontraba en mi vida, sino que también era una puerta hacia un futuro lleno de posibilidades. Descubrí el poder de la tecnología y cómo puede impactar positivamente en diversos aspectos de la sociedad, desde la automatización de procesos hasta el desarrollo de aplicaciones que mejoran la calidad de vida de las personas.</p>
+          <p>Hoy en día, me siento agradecida por ese cambio de rumbo que me condujo a la programación. Ha sido un viaje apasionante, lleno de desafíos y logros, pero sobre todo, me ha permitido desarrollarme como persona y profesional. La programación se ha convertido en el medio a través del cual puedo dar forma a mis ideas y contribuir a crear un mundo mejor.</p>
+          <p>En definitiva, puedo afirmar con convicción que el cambio de rumbo que me llevó a la programación fue una de las decisiones más acertadas de mi vida. Gracias a ella, he encontrado soluciones donde antes solo veía obstáculos y he descubierto una pasión que me impulsa a seguir aprendiendo y creciendo en este fascinante mundo tecnológico."</p>
+          
+          <a href="#">Descargar CV</a>
+      </div>
+    </section>
+
+    <!-- SECCION CONOCIMIENTOS -->
+    <section id="conocimientos">
+      <h3 class="titulo-seccion">CONOCIMIENTOS</h3>
+      <div class="fila">
+        <div class="conocimiento">
+          <span class="icono"><img src="assets/img/developer-front-end.png"></span>
+          <h4>DESARROLLO FRONT-END</h4>
+          <hr>
+          <p>HTML5, CSS3, Javascript, JQuery.</p><br />
+          <p>Desarrollo interfaces web personalizadas y atractivas, basadas en estándares W3C.</p>
+        </div>
+        <div class="conocimiento">
+          <span class="icono"><img src="assets/img/developer.png"></span>
+          <h4>DESARROLLO BACK-END</h4>
+          <hr>
+          <p>Java, Javascript, PHP8, SQL, PhpMyAdmin.</p><br />
+          <p>Gestión bases de datos, gestión y mantenimiento de servidores y mucho más.</p>
+        </div>
+        <div class="conocimiento">
+          <span class="icono"><img src="assets/img/desing.png"></span>
+          <h4>DISEÑO WEB</h4>
+          <hr>
+          <p>Responsive Web Design.<br></p>
+          <p>UX/UI - Experiencia de Usuario. Interfaz de Usuario. Accesibilidad y Usabilidad.</p><br/>
+          <p>Diseño sitios web a medida, de calidad y funcionales mediante CMS como WordPress, con el fin de que cada marca destaque en el mercado online.</p>
+        </div>
+        
+      </div>
+      <div class="fila">
+        <div class="conocimiento">
+          <span class="icono"><img src="assets/img/apps.png"></span>
+          <h4>APLICACIONES MÓVILES</h4>
+          <hr>
+          <p>Android, iOS.</p> <br/>
+          <p> Creación y publicación de aplicaciones móviles mediante CMS, lo que implica una comprensión de las directrices de las tiendas de aplicaciones.</p>
+        </div>
+        <div class="conocimiento">
+          <span class="icono"><img src="assets/img/rrss.png"></span>
+            <h4>RRSS</h4>
+            <hr>
+            <p> Instagram, Facebook, X, LinkedIn. </p> <br/>
+            <p>No importa el tamaño de una empresa, tengo conocimientos en la gestión de redes sociales para ayudar a aumentar el alcance de una marca y llegar a más clientes potenciales.</p>
+        </div>
+        <div class="conocimiento">
+          <span class="icono"><img src="assets/img/seo.png"></span>
+          <h4>SEO</h4>
+          <hr>
+          <p>Optimización interna (SEO On-Page) y estrategias externas (SEO Off-Page).</p> <br />
+          <p>Investigación de palabras clave, optimización de contenido y construcción de enlaces de calidad para mejorar la visibilidad y el ranking de los sitios web y las aplicaciones en los motores de búsqueda.</p>
+        </div>
+      </div>
+  </section>
+
+    <!-- SECCION HERRAMIENTAS -->
+    <div class="cont-tools">
+      <h3 style="text-align: center;">HERRAMIENTAS</h3>
+      <div class="contenedor-tools" id="tools"> 
+        <div class="columna">
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Visual Studio Code</p>
+              <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 90%" id="vs"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Netbeans</p>
+              <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 90%" id="nb"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Chrome Developer Tools</p>
+              <span class="porcentaje">65%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 65%" id="ch"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Babel</p>
+              <span class="porcentaje">45%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 45%" id="babel"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>AngularJS</p>
+              <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 40%" id="angular"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Node.js</p>
+              <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 40%" id="node"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Laravel</p>
+              <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 40%" id="laravel"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>MySQL</p>
+              <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 85%" id="mysql"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>phpMyAdmin</p>
+              <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 90%" id="myadmin"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>React.js</p>
+              <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 40%" id="react"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Less</p>
+              <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 80%" id="less"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>PageSpeed Insights</p>
+              <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 90%" id="pagespeed"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>HTTPS</p>
+              <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 80%" id="https"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Google Keyword Planner</p>
+              <span class="porcentaje">45%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 45%" id="gkp"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Firebase</p>
+              <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 80%" id="firebase"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>GoodBarber</p>
+              <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 95%" id="gb"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>OneSignal</p>
+              <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 95%" id="os"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>RankMath</p>
+              <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 80%" id="rm"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Facebook Ads Manager</p>
+              <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 40%" id="fam"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>LinkedIn Campaign Manager</p>
+              <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 40%" id="lcm"></div>
+            </div>
+          </div>
+        </div>
+        <div class="columna">
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Sublime Text</p>
+              <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 80%" id="st"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Git & Github</p>
+              <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 85%" id="git"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Sass</p>
+              <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 80%" id="sass"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Bootstrap</p>
+              <span class="porcentaje">60%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 60%" id="bs"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Apache</p>
+              <span class="porcentaje">65%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 65%" id="apache"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Tomcat</p>
+              <span class="porcentaje">65%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 65%" id="at"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Docker</p>
+              <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 50%" id="docker"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Vue.js</p>
+              <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 40%" id="vue"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Lighthouse</p>
+              <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 80%" id="lighthouse"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Screaming Frog</p>
+              <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 85%" id="sfrog"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Google Analytics</p>
+              <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 85%" id="ga"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Google Search Console</p>
+              <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 95%" id="gsc"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Google Tag Manager </p>
+              <span class="porcentaje">60%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 60%" id="gtm"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>ScoreApps</p>
+              <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 95%" id="scoreApps"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>YoastSeo </p>
+              <span class="porcentaje">60%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 60%" id="ys"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>WordPress</p>
+              <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 85%" id="wp"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Twitter Ads
+              </p>
+              <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 85%" id="twa"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Zapier</p>
+              <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 80%" id="zapier"></div>
+            </div>
+          </div>
+          <div class="tool">
+            <div class="info">
+              <p><span class="lista"> </span>Wamp & Lamp</p>
+              <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+              <div class="barra-llenado" style="width: 80%" id="wamp"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+          <div class="proyecto">
+            <a href="http://www.inmomenenia.com"><img src="assets/img/inmomenenia.jpg" alt="pantalla inmomenenia"></a>
+            <div class="info">
+              <h4>Desarrollo Web</h4>
+              <p>PHP, SQL</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <a href="https://github.com/DigitalMenenia/masterMind"><img src="assets/img/MasterMind.jpg" alt="pantalla juego MasterMind"></a>
+            <div class="info">
+              <h4>Desarrollo Web</h4>
+              <p>PHP, JavaScript</p>
+            </div>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="proyecto">
+            <a href="https://digitalmenenia.github.io/ecommerce"><img src="assets/img/ecommerce.jpg" alt="pantalla ecommerce"></a>
+            <div class="info">
+              <h4>Diseño Web</h4>
+              <p>HTML, JavaScript</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <a href="https://digitalmenenia.github.io/aprende-vocabulario"><img src="assets/img/vocabulario.jpg" alt="pantalla juego vocabulario"></a>
+            <div class="info">
+              <h4>Desarrollo Web</h4>
+              <p>PHP</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- SECCTION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacta ahora</h3>
+        <div class="contenedor-form">
+          <form id='contacto' action='mailto:contacto@inmomenenia.com' method='post' accept-charset='utf-8'>
+                <div class="fila mitad">
+                    <input type="text"  name='nombre' placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email"  name='email' placeholder="Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" name='asunto' placeholder="Asunto" class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name='mensaje' id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+                <input type="submit" name='Enviar' value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2024</p>
+        <div class="redes">
+          <a href="https://www.linkedin.com/in/lorena-marco/"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    
+</body>
+
+</html>
