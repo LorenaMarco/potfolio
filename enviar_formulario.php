@@ -18,5 +18,5 @@ $headers = 'From: tu_direccion_de_email@example.com' . "\r\n" .
 
 mail($destinatario, $asunto_email, $contenido_email, $headers);
 
-echo "Su mensaje ha sido enviado"// Redireccionar o mostrar un mensaje de éxito
+header ("Location:gracias.html");
 ?>
