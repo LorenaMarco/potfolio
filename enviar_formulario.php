@@ -4,7 +4,7 @@ $email = $_POST['email'];
 $asunto = $_POST['asunto'];
 $mensaje = $_POST['mensaje'];
 
-$destinatario = 'lmarco@outlook.es';
+$destinatario = 'contacto@digitalmenenia.com';
 $asunto_email = 'Nuevo mensaje desde el formulario de contacto';
 
 $contenido_email = "Nombre: $nombre\n";
@@ -18,4 +18,5 @@ $headers = 'From: tu_direccion_de_email@example.com' . "\r\n" .
 
 mail($destinatario, $asunto_email, $contenido_email, $headers);
 
+echo "Su mensaje ha sido enviado"// Redireccionar o mostrar un mensaje de éxito
 ?>
