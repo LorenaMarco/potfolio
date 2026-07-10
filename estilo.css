@@ -366,42 +366,6 @@
             height: 6px;
             animation: progreso4 2s forwards;
         }
-        /*
-        @keyframes progreso1 {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: 95%;
-            }
-        }
-        
-        @keyframes progreso2 {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: 80%;
-            }
-        }
-        
-        @keyframes progreso3 {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: 85%;
-            }
-        }
-        
-        @keyframes progreso4 {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: 90%;
-            }
-        }*/
 
 
 
@@ -427,8 +391,8 @@
     }
     
     .barra-llenado {
-        background-color: #007bff; /* Color de la barra de progreso */
-        height: 100%; /* Altura de la barra de progreso */
+        background-color: #007bff;
+        height: 100%;
     }
     
       
@@ -441,7 +405,107 @@
               width: auto;
           }
       }
-      
+
+        /* *********************/
+        /* seccion TECNOLOGIAS (estrellas + categorias) */
+        /* *********************/
+
+        .cont-tools .titulo-seccion {
+            color: #fff;
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-color: rgba(255, 255, 255, 0.4);
+            text-decoration-thickness: 5px;
+            margin-bottom: 50px;
+        }
+
+        .stars-grid {
+            max-width: 700px;
+            margin: 0 auto 70px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px 50px;
+        }
+
+        .stars-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .stars-name {
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-align: left;
+        }
+
+        .stars-rating {
+            font-size: 20px;
+            letter-spacing: 3px;
+            color: #ff5080;
+        }
+
+        .categorias-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .categoria {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 8px;
+            padding: 22px;
+            text-align: left;
+            transition: .5s;
+        }
+
+        .categoria:hover {
+            background: rgba(255, 255, 255, 0.14);
+        }
+
+        .categoria h4 {
+            margin: 0 0 16px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            background-color: #ff5080;
+            color: #fff;
+            white-space: nowrap;
+            transition: .5s;
+        }
+
+        .tag:hover {
+            background-color: #fff;
+            color: #ff5080;
+        }
+
+        @media (max-width: 768px) {
+            .stars-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* *********************/
         /* seccion PORTFOLIO */
         /* *********************/
