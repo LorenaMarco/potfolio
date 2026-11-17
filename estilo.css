@@ -740,3 +740,34 @@
                 margin-bottom: 15px;
             }
         }
+
+#inicio .contenido .presentacion h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#inicio .contenido .presentacion h2 small {
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#inicio .contenido .presentacion .especialidades {
+    font-size: 15px;
+    color: #e5e5e5;
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 15px;
+}
+
+@media (max-width: 800px) {
+    #inicio .contenido .presentacion h2 small {
+        font-size: 22px;
+    }
+
+    #inicio .contenido .presentacion .especialidades {
+        font-size: 13px;
+    }
+}
